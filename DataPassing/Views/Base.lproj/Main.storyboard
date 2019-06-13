@@ -42,8 +42,8 @@
                                 <rect key="frame" x="57" y="703" width="300" height="50"/>
                                 <color key="backgroundColor" red="0.27450980390000002" green="0.59607843140000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="ORg-Ze-uVC"/>
-                                    <constraint firstAttribute="width" constant="300" id="by6-17-wbb"/>
+                                    <constraint firstAttribute="height" constant="50" id="1Wf-S2-6ko"/>
+                                    <constraint firstAttribute="width" constant="300" id="8on-ui-YbP"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Submit">
@@ -53,20 +53,33 @@
                                     <action selector="submitButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hcv-dh-jIB"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the data to Pass" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DFJ-xB-J4Y">
+                                <rect key="frame" x="89.5" y="315" width="235" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="235" id="HqY-qq-50u"/>
+                                    <constraint firstAttribute="height" constant="32" id="iFz-f2-sUL"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ttt-TF-JP0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="40a-71-0OQ"/>
+                            <constraint firstItem="V8M-bJ-kUe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sgl-ZE-oby"/>
+                            <constraint firstItem="DFJ-xB-J4Y" firstAttribute="top" secondItem="EJN-pD-a9E" secondAttribute="bottom" constant="66" id="UHw-Yc-YP2"/>
                             <constraint firstItem="EJN-pD-a9E" firstAttribute="top" secondItem="ttt-TF-JP0" secondAttribute="bottom" constant="98.5" id="XqA-EF-Q0h"/>
+                            <constraint firstItem="DFJ-xB-J4Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="czR-gT-GIA"/>
                             <constraint firstItem="ttt-TF-JP0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="e3E-Jy-Rbi"/>
-                            <constraint firstItem="V8M-bJ-kUe" firstAttribute="top" secondItem="EJN-pD-a9E" secondAttribute="bottom" constant="454" id="jsQ-Qh-s13"/>
                             <constraint firstItem="EJN-pD-a9E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vns-tc-fri"/>
-                            <constraint firstItem="V8M-bJ-kUe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z8X-Of-Y2V"/>
+                            <constraint firstItem="V8M-bJ-kUe" firstAttribute="top" secondItem="DFJ-xB-J4Y" secondAttribute="bottom" constant="356" id="z7L-3I-4lh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="firstVCLbl" destination="ttt-TF-JP0" id="oz8-e0-9Ra"/>
+                        <outlet property="secondUserData" destination="DFJ-xB-J4Y" id="z1L-qg-5NR"/>
                         <outlet property="userData" destination="EJN-pD-a9E" id="OyB-4s-5OI"/>
                     </connections>
                 </viewController>
@@ -96,8 +109,8 @@
                                 <rect key="frame" x="57" y="713" width="300" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.63967702969999995" blue="0.27474528970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="T6a-bd-mnd"/>
-                                    <constraint firstAttribute="width" constant="300" id="hbh-n2-aXZ"/>
+                                    <constraint firstAttribute="width" constant="300" id="4TZ-gI-4Pi"/>
+                                    <constraint firstAttribute="height" constant="50" id="wPE-Dz-TTX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Back">
@@ -107,11 +120,21 @@
                                     <action selector="backButtonTapped:" destination="ih7-bJ-DGR" eventType="touchUpInside" id="m2d-BR-NWu"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mir-J0-5VE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Data" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mir-J0-5VE">
                                 <rect key="frame" x="57" y="195" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="C9K-CE-ALO"/>
                                     <constraint firstAttribute="height" constant="50" id="mxe-6x-rcd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second Data" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DyM-7Z-ooi">
+                                <rect key="frame" x="57" y="321" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="JkT-XN-Bx9"/>
+                                    <constraint firstAttribute="height" constant="50" id="KVj-Rm-932"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -122,8 +145,10 @@
                         <constraints>
                             <constraint firstItem="mir-J0-5VE" firstAttribute="centerX" secondItem="kl9-YN-ML5" secondAttribute="centerX" id="1yY-8S-xbh"/>
                             <constraint firstItem="UZh-Bs-d3m" firstAttribute="centerX" secondItem="kl9-YN-ML5" secondAttribute="centerX" id="5eI-Pw-RyJ"/>
-                            <constraint firstItem="0FA-eY-StL" firstAttribute="centerX" secondItem="kl9-YN-ML5" secondAttribute="centerX" id="Bau-0p-GNe"/>
-                            <constraint firstItem="0FA-eY-StL" firstAttribute="top" secondItem="mir-J0-5VE" secondAttribute="bottom" constant="468" id="TZy-GQ-q8O"/>
+                            <constraint firstItem="DyM-7Z-ooi" firstAttribute="centerX" secondItem="kl9-YN-ML5" secondAttribute="centerX" id="O4a-Tz-uVp"/>
+                            <constraint firstItem="0FA-eY-StL" firstAttribute="top" secondItem="DyM-7Z-ooi" secondAttribute="bottom" constant="342" id="cuS-Bd-yDe"/>
+                            <constraint firstItem="0FA-eY-StL" firstAttribute="centerX" secondItem="kl9-YN-ML5" secondAttribute="centerX" id="ltR-X0-ZjG"/>
+                            <constraint firstItem="DyM-7Z-ooi" firstAttribute="top" secondItem="mir-J0-5VE" secondAttribute="bottom" constant="76" id="miJ-az-Ydh"/>
                             <constraint firstItem="mir-J0-5VE" firstAttribute="top" secondItem="UZh-Bs-d3m" secondAttribute="bottom" constant="43" id="r4j-mx-dVR"/>
                             <constraint firstItem="UZh-Bs-d3m" firstAttribute="top" secondItem="y48-sa-H61" secondAttribute="top" constant="58" id="xcq-fk-oM3"/>
                         </constraints>
@@ -131,6 +156,7 @@
                     </view>
                     <connections>
                         <outlet property="receivedData" destination="mir-J0-5VE" id="StF-1T-Zjq"/>
+                        <outlet property="receivedData2" destination="DyM-7Z-ooi" id="F2R-VK-Vei"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z68-JO-27h" userLabel="First Responder" sceneMemberID="firstResponder"/>
