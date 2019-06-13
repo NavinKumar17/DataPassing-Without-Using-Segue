@@ -11,6 +11,11 @@ import UIKit
 protocol DataToBeSent {
     func sendDataToSecondViewController(data: String)
     }
+// MARK: Enum
+enum views: String
+{
+    case view1 = "SecondViewController"
+}
 
 class ViewController: UIViewController {
     
@@ -18,11 +23,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var userData: UITextField!
     @IBOutlet weak var firstVCLbl: UILabel!
     
-    // MARK: Enum
-    enum views: String
-    {
-        case view1 = "SecondViewController"
-    }
+    
    
     // Mark: Local Variables
     var delegate: DataToBeSent?

@@ -14,6 +14,7 @@
 		7127150922B204B20060835E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7127150722B204B20060835E /* LaunchScreen.storyboard */; };
 		7127151422B204B20060835E /* DataPassingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7127151322B204B20060835E /* DataPassingTests.swift */; };
 		7127151F22B204B20060835E /* DataPassingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7127151E22B204B20060835E /* DataPassingUITests.swift */; };
+		7127152E22B208EE0060835E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7127152C22B2080B0060835E /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		7127151A22B204B20060835E /* DataPassingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataPassingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7127151E22B204B20060835E /* DataPassingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPassingUITests.swift; sourceTree = "<group>"; };
 		7127152022B204B20060835E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7127152C22B2080B0060835E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +99,15 @@
 		712714FD22B204B20060835E /* DataPassing */ = {
 			isa = PBXGroup;
 			children = (
+				7127152F22B22DC40060835E /* Models */,
+				7127153022B22E100060835E /* Router */,
+				7127153122B22E190060835E /* Worker */,
+				7127153222B22E220060835E /* Inferactor */,
+				7127153322B22E320060835E /* Presenter */,
+				7127153622B22E760060835E /* Views */,
+				7127153722B22E7E0060835E /* Controllers */,
 				712714FE22B204B20060835E /* AppDelegate.swift */,
-				7127150022B204B20060835E /* ViewController.swift */,
-				7127150222B204B20060835E /* Main.storyboard */,
 				7127150522B204B20060835E /* Assets.xcassets */,
-				7127150722B204B20060835E /* LaunchScreen.storyboard */,
 				7127150A22B204B20060835E /* Info.plist */,
 			);
 			path = DataPassing;
@@ -123,6 +129,59 @@
 				7127152022B204B20060835E /* Info.plist */,
 			);
 			path = DataPassingUITests;
+			sourceTree = "<group>";
+		};
+		7127152F22B22DC40060835E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7127153022B22E100060835E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		7127153122B22E190060835E /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		7127153222B22E220060835E /* Inferactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Inferactor;
+			sourceTree = "<group>";
+		};
+		7127153322B22E320060835E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7127153622B22E760060835E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7127150222B204B20060835E /* Main.storyboard */,
+				7127150722B204B20060835E /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7127153722B22E7E0060835E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7127152C22B2080B0060835E /* SecondViewController.swift */,
+				7127150022B204B20060835E /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7127152E22B208EE0060835E /* SecondViewController.swift in Sources */,
 				7127150122B204B20060835E /* ViewController.swift in Sources */,
 				712714FF22B204B20060835E /* AppDelegate.swift in Sources */,
 			);
